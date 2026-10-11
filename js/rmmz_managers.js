@@ -524,9 +524,9 @@ ConfigManager.readFlag = function(config, name, defaultValue) {
 
 ConfigManager.readVolume = function(config, name) {
     if (name in config) {
-        return Number(config[name]).clamp(0, 10);
+        return Number(config[name]).clamp(0, 20);
     } else {
-        return 10;
+        return 20;
     }
 };
 
